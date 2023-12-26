@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image</title>
+</head>
+<body>
+    <h2>image</h2>
+
+    <label for="pilihGambar">Pilih Gambar</label>
+    <select id="pilihGambar" onchange="tampilGambar()">
+        <br>
+        <option value="a">This Me</option> 
+        <option value="b">Gdsc members</option>
+        <option value="c">SI08</option>
+        <option value="d">Maen bareng</option>
+        <option value="e">Mabit</option>
+    </select>
+    <br>
+    <img src="ini saya.jpg" id="gambarPilihan" alt="kosong" width="300">
+
+    <!-- javascript -->
+    <script>
+        function tampilGambar(){
+            let nilaiTerpilih = document.getElementById("pilihGambar").value
+            
+            //menampilkan gambar sesuai pilihan menu dengan SwitchCase
+            switch (nilaiTerpilih){
+                case "a":
+                     gambarPilihan.src = "ini saya.jpg";
+                     break;
+                case "b":
+                     gambarPilihan.src = "studyjamuiux.jpg";
+                     break;
+                case "c":
+                     gambarPilihan.src = "si08.jpg";
+                     break;
+                case "d":
+                     gambarPilihan.src = "maenbarengsi08.jpg";
+                     break;
+                case "e":
+                    gambarPilihan.src = "mabit2023.jpg";
+                    break;
+            }
+        }
+    </script>
+
+    
+</body>
+</html>
